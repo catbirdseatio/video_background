@@ -1,5 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=MuseoModerno:wght@300;400;700;800&display=swap');
 
+:root {
+    --background-color: #034b52;
+    --text-color: #CC333F;
+    --button-text-color: #EDC951;
+  }
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -11,8 +17,6 @@ html {
 }
 
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background: #fff;
     font-size: 1.5rem;
     line-height: 1.5;
 }
@@ -27,7 +31,7 @@ body {
     justify-content: space-between;
     align-items: center;
     background-color: #111;
-    color: #ea3b3b;
+    color: var(--text-color);
     z-index: 2;
 }
 
@@ -60,7 +64,7 @@ overlay {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: #048eff;
+    background-color: var(--background-color);
     mix-blend-mode: overlay;
 }
 
@@ -91,6 +95,46 @@ text p {
     max-width: 70rem;
 }
 
+text a {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: inline-block;
+    font-size: 1.6rem;
+    color: var(--button-text-color);
+    background: var(--text-color);
+    padding: 1rem 3rem;
+    text-decoration: none;
+    transition: 0.25s;
+}
+
+text a:hover {
+    letter-spacing: .4rem;
+}
+
+.social {
+    position: absolute;
+    bottom: 2rem;
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.social li {
+    list-style: none;
+}
+
+.social li a {
+    display: inline-block;
+    color: var(--text-color);
+    opacity: .9;
+    margin-right: 2rem;
+    transition: 0.5s;
+}
+
+.social li a:hover {
+    transform: scale(1.5) translateY(-1.5rem);
+}
+
 .logo {
     cursor: pointer;
     font-family: 'MuseoModerno', cursive;
@@ -117,4 +161,21 @@ toggle.active {
     cursor: pointer;
 }
 
+
+
 menu {}
+
+@media(max-width: 768px) {
+    .showcase,
+    .showcase header {
+        padding: 4rem;
+    }
+
+    text h2 {
+        font-size: 4rem;
+    }
+
+    text h3 {
+        font-size: 3rem;
+    }
+}

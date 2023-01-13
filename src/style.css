@@ -102,6 +102,7 @@ text p {
 }
 
 text a {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     display: inline-block;
     font-size: 1.6rem;
     color: var(--button-text-color);

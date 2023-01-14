@@ -160,7 +160,7 @@ toggle {
 toggle::before {
     font-family: "FontAwesome";
     content: "\f0c9";
-    font-size: 3rem;
+    font-size: 4rem;
 }
 
 toggle.active {
@@ -168,10 +168,7 @@ toggle.active {
 }
 
 toggle.active::before {
-    position: absolute;
     font-family: "FontAwesome";
-    top: 0;
-    left: 0;
     content: "\58";
     font-size: 4rem;
 }

@@ -4,7 +4,7 @@
     --background-color: #034b52;
     --text-color: #CC333F;
     --button-text-color: #EDC951;
-  }
+}
 
 * {
     box-sizing: border-box;
@@ -200,12 +200,12 @@ menu ul li a:hover {
 }
 
 @media(max-width: 768px) {
+
     .showcase,
     .showcase header {
         padding: 4rem;
     }
 
-    
     text h2 {
         font-size: 4rem;
     }
